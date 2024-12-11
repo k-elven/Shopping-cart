@@ -8,7 +8,7 @@ export default {
         }
     },
     mutations:{
-        setCartList (state,newList){
+        setCartList (state,newList){ 
             state.cartList = newList
         },
         danxuan(state,goodsId){

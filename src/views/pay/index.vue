@@ -110,7 +110,7 @@ export default {
 computed: {
   selectAddress () {
     // 这里地址管理不是主线业务，直接获取默认第一条地址
-    return this.addressList[0] || []
+    return this.addressList[0] || [] 
   },
   longAddress () {
     const region = this.selectAddress.region

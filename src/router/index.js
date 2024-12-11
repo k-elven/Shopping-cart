@@ -7,6 +7,7 @@ import pay from '@/views/pay'
 import prodetail from '@/views/prodetail'
 import search from '@/views/search'
 import searchlist from '@/views/search/list'
+import addressList  from '@/views/pay/addressList'
 import store from '@/store'
 //子路由
 import home from '@/views/layout/home'
@@ -31,6 +32,7 @@ const router = new VueRouter({
     },
     {path: '/myorder', component: myorder},
     {path: '/pay', component: pay},
+    {path: '/addressList' , component: addressList},
     //商品传参
     {path: '/prodetail/:id', component: prodetail},
     {path: '/search', component: search},
