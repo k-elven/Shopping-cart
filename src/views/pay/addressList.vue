@@ -34,6 +34,7 @@
 <script>
 import { mapState } from 'vuex';
 // import { areaList } from '@vant/area-data';
+import {addAddressLists} from '@/api/API-address'
 export default { 
   name:'addressList',
   data() {
@@ -42,8 +43,8 @@ export default {
       list: [],
       disabledList: [],
       //地区列表
-      areaList:{},
-      searchResult: [],
+      areaList,
+      searchResult: [], 
       addShow:false,
       show: false,
     }
@@ -98,12 +99,7 @@ export default {
     await this.AddressList()
     await this.addressDefaults()
     await this.getadddefault()
-  },
-  watch: {
-    areaLists(newVal) {
-      this.areaList = newVal; // 确保 areaList 在 Vuex 更新后同步到本地 data
-    },
-  },
+  }
 }
 </script>
 

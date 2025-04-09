@@ -36,7 +36,7 @@ export default {
     return {
       picurl:'',
       pickey:'',
-      Totalsecond:5,
+      Totalsecond:60,
       second:5,
       timer:null,  //定时器ID
       mobile:'',
